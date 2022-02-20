@@ -216,3 +216,7 @@ header nav ul li a:hover {
     section {
       scroll-margin-top: 0px;
     }
+
+    .about {
+      flex-direction: column;
+    }
