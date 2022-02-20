@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Run Buddy</title>
+    <title>William Schultz</title>
   </head>
   <body>
     <!-- header/navigation -->
     <header>
       <h1>
-        <a href="/">Portfolio: Colt Schultz</a>
+        <a href="/">William Schultz</a>
       </h1>
       <nav>
         <ul>
@@ -18,14 +19,12 @@
             <a href="#about-me">About Me</a>
           </li>
           <li>
-            <a href="#">My Work</a>
+            <a href="#my-work">My Work</a>
           </li>
           <li>
-            <a href="#">Contact Me</a>
+            <a href="#contact-me">Contact Me</a>
           </li>
-          <li>
-            <a href="#">Download CV</a>
-          </li>
+
         </ul>
       </nav>
     </header>
@@ -34,12 +33,13 @@
     <section class="hero"></section>
 
     <!-- About Me Section -->
-    <section class="about-me" id="about-me">
-      <h1>About Me</h1>
-      <div class="image">
-        <img src="about.png" alt="Colt Schultz photo portrait" />
+    <section id="about-me">
+      <div class="about">
+      <div class="about-image">
+        <img src="./assets/images/about.jpg" />
       </div>
-      <article>
+      <div class="about-text">
+        <h1>ABOUT ME</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -51,44 +51,70 @@
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-      </article>
-    </section>
-
-    <!-- My Work Section -->
-    <section class="my-work" id="my-work">
-      <h1>My Work</h1>
-      <div>
-        <article classs="work">
-          <h2>Title of Work</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-          </p>
-          <a href="#">Visit Site</a>
-        </article>
-        <article classs="work">
-          <h2>Title of Work</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-          </p>
-          <a href="#">Visit Site</a>
-        </article>
-        <article classs="work">
-          <h2>Title of Work</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-          </p>
-          <a href="#">Visit Site</a>
-        </article>
       </div>
+    </section>
+    
+    <!-- My Work Section -->
+    <section class="work" id="my-work">
+      <br>
+      <h1>MY WORK</h1>
+      <div class="work-container">
+        <div class="row1">
+        <article class="work-content">
+          <a href="https://coltschultz.github.io/run-buddy/"><img src="./assets/images/run-buddy.png" alt="Run Buddy Website Thumbnail" /></a>
+          <div class="work-text">
+          <h1>RUN BUDDY</h1>
+          <p>
+            A landing page designed in coding bootcamp, my most recent project.
+          </p>
+          </div>
+        </article>
+        </div>
+        <div class="row2">
+        <article class="work-content">
+          <a href="https://www.liconainsurance.com"><img src="./assets/images/licona.jpg" /></a>
+          <div class="work-text">
+          <h1>Licona Insurance</h1>
+          <p>
+            A landing page designed for a retail insurance agency that I maintain as a part of my current job duties.
+          </p>
+          </div>
+        </article>
+        <article class="work-content">
+          <a href="https://www.southernstarmga.com"><img src="./assets/images/southernstar.jpg" /></a>
+          <div class="work-text">
+          <h1>Southern Star MGA</h1>
+          <p>
+            A landing page designed for an insurance managing general agency that I maintain as a part of my current job duties.
+          </p>
+          </div>
+        </article>
+        </div>
+    </div>
+  </div>
     </section>
 
     <!-- Contact Me Section -->
-    <section class="contact-me" id="contact-me"></section>
+    <section class="about" id="contact-me">
+    <div class="about-text">
+      <h1>CONTACT ME</h1>
+      <p>
+        I can be reached at any time using the information below:
+      </p>
+      <p>
+        <a href="mailto:#">colt@coltschultz.com</a>
 
-    <!-- Download CV Section -->
-    <section class="download-cv" id="download-cv"></section>
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="./assets/images/about.jpg" />
+    </div>
+    </section>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+      <p>&copy; Copyright Colt Schultz 2022</p>
+    </footer>
+
   </body>
 </html>
