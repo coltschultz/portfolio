@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <main id="main">
         <!-- Navbar -->
         <nav class="navbar" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
@@ -63,14 +63,14 @@
           </div>
         </nav>
         <!-- Content Container -->
-        <div id="contentContainer" class="columns is-vcentered is-centered">
-          <section id="contentBox" class="column is-half box columns">
-              <article id="photoBox" class="column is-one-fifths">
+        <div id="contentContainer" class="columns is-vcentered is-centered contentContainer fullHeight">
+          <section class="column is-half box columns contentBox">
+              <article class="column is-one-fifths photoBox">
 
-                <img src="colt.jpg" alt="Portrait of Colt" id="photo" />
+                <img src="colt.jpg" alt="Portrait of Colt" class="photoImg" />
 
               </article>
-              <article id="textBox" class="column is-four-fifths">
+              <article class="column is-four-fifths textBox">
                 <h1 class="title is-3">About Me</h1>
                 <p>Bootcamp programmer developing a portfolio. </p>
                 <p>More to come soon.</p>
@@ -79,6 +79,6 @@
           </section>
         </div>
     </main>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

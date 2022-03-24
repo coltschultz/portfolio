@@ -16,26 +16,33 @@ main {
   height: 100%;
 }
 
-#contentContainer {
-  height: 100%;
+.contentContainer {
   align-items: center;
 }
 
-#contentBox {
+.m30 {
+  margin: 30px;
 }
 
-#photoBox {
+.fullHeight {
+  height: 100%;
+}
+
+.contentBox {
+}
+
+.photoBox {
   height: 100%;
   align-items: center;
   text-align: center;
 }
 
-#photo {
+.photoImg {
   height: 200px;
   object-fit: cover;
 }
 
-#textBox {
+.textBox {
   position: relative;
 }
 
@@ -43,6 +50,10 @@ main {
   position: absolute;
   bottom: 2px;
   right: 2px;
+}
+
+.second {
+  margin-left: 10px;
 }
 
 /* MEDIA QUERIES FOR TABLETS & SMALLER */
