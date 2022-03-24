@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: aliceblue;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+}
+
+#contentContainer {
+  height: 100%;
+  align-items: center;
+}
+
+#contentBox {
+}
+
+#photoBox {
+  height: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+#photo {
+  height: 200px;
+  object-fit: cover;
+}
+
+#textBox {
+  position: relative;
+}
+
+.alignBottom {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+}
+
+/* MEDIA QUERIES FOR TABLETS & SMALLER */
+@media screen and (max-width: 768px) {
+  #textBox {
+    text-align: center;
+  }
+  #textBox {
+  }
+  .alignBottom {
+    position: relative;
+    top: 8px;
+  }
+}
