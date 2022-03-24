@@ -1,14 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
   height: 100%;
 }
 
 body {
-  background-color: aliceblue;
   height: 100%;
 }
 
@@ -56,13 +50,17 @@ main {
   margin-left: 10px;
 }
 
+.is-work {
+  border-radius: 15px;
+}
+
 /* MEDIA QUERIES FOR TABLETS & SMALLER */
 @media screen and (max-width: 768px) {
-  #textBox {
+  .textBox {
     text-align: center;
+    padding: 20px;
   }
-  #textBox {
-  }
+
   .alignBottom {
     position: relative;
     top: 8px;

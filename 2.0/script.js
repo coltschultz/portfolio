@@ -17,14 +17,15 @@ const charge = {
     git: 'https://github.com/coltschultz/charge-on-the-run',
     name: 'Charge On the Run',
     desc: 'A MVP web app that allows utilized Google Maps SDK to allow users to find charging stations nearby or in any given city.',
-    photo: './assets/img/charge.jpg'
+    photo: './assets/img/charge.png'
     };
 
 const work = [ssmga, licona, charge];
 
 const main = document.querySelector('#main');
 const contentEl = document.querySelector('#contentContainer');
-const viewLinkEl2 = document.querySelector('#viewLink2');
+const viewLinkEl2 = document.querySelector('#viewLinkEl2');
+const viewLinkEl = document.querySelector('#viewLinkEl');
 
 const clearContent = () => {
     contentEl.remove();
@@ -36,17 +37,18 @@ const display = (arg) => {
     newContentBox = document.createElement('section');
     newContentBox.className = 'column is-half box columns contentBox m30';
     newPhotoBox  = document.createElement('article');
-    newPhotoBox.className = 'column is-one-fifths photoBox';
+    newPhotoBox.className = 'column is-two-fifths photoBox';
     newPhoto = document.createElement('img');
-    newPhoto.className = 'photoImg';
+    newPhoto.className = 'photoImg is-work';
     newPhoto.setAttribute("src", arg.photo);
     newPhoto.setAttribute("alt", "Screenshot of Application");
     newTextBox = document.createElement('article');
-    newTextBox.className = 'column is-four-fifths textBox';
+    newTextBox.className = 'column is-three-fifths textBox';
     newTitle = document.createElement('h1');
     newTitle.className = 'title is-3';
     newTitle.innerHTML = arg.name;
     newText = document.createElement('p');
+    newText.className = 'subtitle is-6';
     newText.innerHTML = arg.desc;
     deployedButton = document.createElement('a');
     deployedButton.setAttribute = ("href", arg.url);
@@ -70,7 +72,36 @@ const display = (arg) => {
 const showWork = () => {
     clearContent(); 
     work.forEach(display)
-
 };
+
+viewLinkEl2.addEventListener("click", showWork);
+viewLinkEl.addEventListener("click", showWork);
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+  
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+  
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+  
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+  
+        });
+      });
+    }
+  
+  });
 
 
