@@ -51,11 +51,11 @@ const display = (arg) => {
     newText.className = 'subtitle is-6';
     newText.innerHTML = arg.desc;
     deployedButton = document.createElement('a');
-    deployedButton.setAttribute = ("href", arg.url);
+    deployedButton.setAttribute("id", "test");
     deployedButton.innerHTML = 'Deployed'
     deployedButton.className = 'button is-primary';
     gitButton = document.createElement('a');
-    gitButton.setAttribute = ("href", arg.url);
+    gitButton.setAttribute("href", arg.git);
     gitButton.innerHTML = 'Github'
     gitButton.className = 'button is-primary second';
     main.appendChild(newContainer);
