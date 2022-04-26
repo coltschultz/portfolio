@@ -23,6 +23,7 @@ main {
 }
 
 .contentBox {
+  margin: 30px auto;
 }
 
 .photoBox {
@@ -52,6 +53,10 @@ main {
 
 .is-work {
   border-radius: 15px;
+}
+
+.viewLog {
+  margin-top: 10px;
 }
 
 /* MEDIA QUERIES FOR TABLETS & SMALLER */

@@ -1,129 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="robots" content="noindex">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>William Schultz</title>
-  </head>
-  <body>
-    <!-- header/navigation -->
-    <header>
-      <h1>
-        <a href="/">William Schultz</a>
-      </h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#about-me">About Me</a>
-          </li>
-          <li>
-            <a href="#my-work">My Work</a>
-          </li>
-          <li>
-            <a href="#contact-me">Contact Me</a>
-          </li>
-
-        </ul>
-      </nav>
-    </header>
-
-    <!-- hero -->
-    <section class="hero"></section>
-
-    <!-- About Me Section -->
-    <section id="about-me">
-      <div class="about">
-      <div class="about-image">
-        <img src="./assets/images/about.jpg" />
-      </div>
-      <div class="about-text">
-        <h1>ABOUT ME</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-      </div>
-    </section>
-    
-    <!-- My Work Section -->
-    <section class="work" id="my-work">
-      <br>
-      <h1>MY WORK</h1>
-      <div class="work-container">
-        <div class="row1">
-        <article class="work-content">
-          <a href="https://coltschultz.github.io/run-buddy/"><img src="./assets/images/run-buddy.png" alt="Run Buddy Website Thumbnail" /></a>
-          <div class="work-text">
-          <h1>RUN BUDDY</h1>
-          <p>
-            A landing page designed in coding bootcamp, my most recent project.
-          </p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Colt Schultz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main">
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="colt.png" width="112" height="28">
+            </a>
+        
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
           </div>
-        </article>
+        
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="index.html">
+                About Me
+              </a>
+        
+              <a class="navbar-item">
+                My Resume
+              </a>
+        
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  My Work
+                </a>
+        
+                <div class="navbar-dropdown">
+                  <a id="viewLinkEl" class="navbar-item">
+                    View Here
+                  </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="https://github.com/coltschultz">
+                    View My Github
+                  </a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-primary">
+                    <strong>Contact Me</strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Content Container -->
+        <div id="contentContainer" class="columns is-vcentered is-centered contentContainer fullHeight">
+          <section class="column is-half-desktop is-four-fifths-mobile box columns contentBox">
+              <article class="column is-one-fifths photoBox">
+
+                <img src="colt.jpg" alt="Portrait of Colt" class="photoImg" />
+
+              </article>
+              <article class="column is-four-fifths textBox">
+                <h1 class="title is-3">About Me</h1>
+                <p class="subtitle is-6">Bootcamp programmer developing a portfolio. More to come soon.</p>
+                
+                <p class="alignBottom"><a href="#" id="viewLinkEl2">View My Work</a></p>
+              </article>
+          </section>
         </div>
-        <div class="row2">
-        <article class="work-content">
-          <a href="https://www.liconainsurance.com"><img src="./assets/images/licona.jpg" /></a>
-          <div class="work-text">
-          <h1>Licona Insurance</h1>
-          <p>
-            A landing page designed for a retail insurance agency that I maintain as a part of my current job duties.
-          </p>
-          </div>
-        </article>
-        <article class="work-content">
-          <a href="https://www.southernstarmga.com"><img src="./assets/images/southernstar.jpg" /></a>
-          <div class="work-text">
-          <h1>Southern Star MGA</h1>
-          <p>
-            A landing page designed for an insurance managing general agency that I maintain as a part of my current job duties.
-          </p>
-          </div>
-        </article>
-        <article class="work-content">
-          <a href="https://coltschultz.github.io/charge-on-the-run/"><img src="./assets/images/charge.png" /></a>
-          <div class="work-text">
-          <h1>Charge On The Run</h1>
-          <p>
-            A web app that allows utilized Google Maps SDK to allow users to find charging stations nearby or in any given city.
-          </p>
-          </div>
-        </article>
-        </div>
-    </div>
-  </div>
-    </section>
-
-    <!-- Contact Me Section -->
-    <section class="about" id="contact-me">
-    <div class="about-text">
-      <h1>CONTACT ME</h1>
-      <p>
-        I can be reached at any time using the information below:
-      </p>
-      <p>
-        <a href="mailto:#">colt@coltschultz.com</a>
-
-      </p>
-    </div>
-    <div class="about-image">
-      <img src="./assets/images/about.jpg" />
-    </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; Copyright Colt Schultz 2022</p>
-    </footer>
-
-  </body>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
