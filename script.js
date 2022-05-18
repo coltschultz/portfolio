@@ -1,5 +1,13 @@
 const date = moment().format("MM/DD/YYYY");
 
+const medPortal = {
+    url: "https://ancient-tor-23586.herokuapp.com/",
+    git: "https://github.com/jen2ags/Med-Portal",
+    name: "MedPortal",
+    desc: "A collaborative full stack appointment scheduling portal.",
+    photo: "./assets/img/medportal.png",
+    viewed: ""
+    };
 const ssmga = {
     url: "https://www.southernstarmga.com",
     git: "#",
@@ -25,11 +33,9 @@ const charge = {
     viewed: ""
     };
 
-var work = JSON.parse(localStorage.getItem("work"));
 
-if(work === null) {
-work = [charge, ssmga, licona];
-};
+const work = [medPortal, charge, ssmga, licona];
+
 
 
 const main = document.querySelector("#main");
